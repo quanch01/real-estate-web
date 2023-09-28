@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  apache:
+    image: quanch/real-estate-web:latest
+    container_name: real-estate-web
+    ports: 
+    - '80:80'
+    volumes:
+    - .:/usr/local/apache2/htdocs
